@@ -1,0 +1,7 @@
+создать бд
+
+yii migrate/create create_nhl_table --fields="match:string,win:int,lose:integer"
+
+yii migrate/create create_statistic_table --fields="statictic_id:integer:foreignKey(nhl),match:string,rating:float"
+
+yii migrate 
